@@ -1,1 +1,152 @@
-/* You can add global styles to this file, and also import other style files */
+$exercise-background-color: #e3e3e3;
+$exercise-primary-color: gray;
+$exercise-form-color: #eeeeee;
+$exercise-button-font-color: #eeeeee;
+$exercise-shadow-color: black;
+
+$exercise-danger-color: #ff386a;
+$exercise-success-color: #00d977;
+$exercise-info-color: #08f;
+$exercise-font-color: black;
+$exercise-warning-color: #ffaa00;
+
+
+#AppWrapper {
+    background-color: $exercise-background-color;
+  
+    color: #221243;
+  }
+  html {
+    background-color: $exercise-background-color;
+  }
+
+  /*Aquí se configuran los estilos de los botones del desarrollo*/
+button.success {
+    color: $exercise-button-font-color;
+    background-color: $exercise-success-color;
+  }
+  
+  button.success:hover {
+    color: $exercise-button-font-color;
+    background-color: #24de8a;
+    border-color: transparent;
+  }
+  
+  button.warning {
+    color: $exercise-button-font-color;
+    background-color: $exercise-warning-color;
+  }
+  
+  button.warning:hover {
+    color: $exercise-button-font-color;
+    background-color: #ffc94d;
+    border-color: transparent;
+  }
+  
+  button.danger {
+    color: $exercise-button-font-color;
+    background-color: $exercise-danger-color;
+  }
+  
+  button.danger:hover {
+    color: $exercise-button-font-color;
+    background-color: #ff547f;
+    border-color: transparent;
+  }
+  
+  button.info {
+    color: $exercise-button-font-color;
+    background-color: $exercise-info-color;
+  }
+  
+  button.info:hover {
+    color: $exercise-button-font-color;
+    background-color: #2499ff;
+    border-color: transparent;
+  }
+  
+  .primary {
+    color: $exercise-button-font-color;
+    background-color: $exercise-primary-color;
+  }
+  
+  .primary:hover {
+    color: $exercise-button-font-color;
+    background-color: #c1b0e1;
+  }
+  
+  button.active {
+    color: $exercise-button-font-color;
+    background-color: #c1b0e1;
+  }
+  
+  button.fullWidth {
+    width: 100%;
+  }
+  
+  button:focus {
+    outline: 0;
+  }
+  
+  select:focus {
+    outline: 0;
+  }
+  
+  button {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 3rem;
+    opacity: 1;
+    background-color: #ffffff;
+    font-weight: 500; 
+    box-shadow: 0px 3px 49px -18px rgba(0, 0, 0, 0.75);
+    border-color: transparent;
+  }
+  
+  button span {
+    color: $exercise-button-font-color;
+    font-size: 15px;
+    font-weight: 500;
+    //font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.7px;
+  }
+  
+  table button {
+    padding: 0.5rem;
+  }
+  
+  .filterButton {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: 45px;
+    height: 45px;
+    color: $exercise-font-color;
+    background-color: $exercise-primary-color;
+  }
+  
+  /*checkbox y radio buttons*/
+  /* The container */
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 17px;
+  }
+
+  
+  

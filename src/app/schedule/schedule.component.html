@@ -1,0 +1,37 @@
+<div class="d-flex justify-content-center">
+    <div class=" loginDivWrapper">
+        <div class="form-group ">
+            <label>Nombre</label>
+            <input type="text" name="username" class="form-control" [(ngModel)]="form.nombre" required />
+            <p *ngIf="guardarError.nombre != null" style="color: red;">{{guardarError.nombre}}</p>
+        </div>
+        <div class="form-group ">
+            <label>Apellido</label>
+            <input type="text" name="password" class="form-control" [(ngModel)]="form.apellido" required />
+            <p *ngIf="guardarError.apellido != null" style="color: red;">{{guardarError.apellido}}</p>
+        </div>
+        <div class="form-group ">
+            <label>Edad</label>
+            <input type="text" name="username" class="form-control" [(ngModel)]="form.edad" required />
+            <p *ngIf="guardarError.edad != null" style="color: red;">{{guardarError.edad}}</p>
+        </div>
+        <div class="form-group ">
+            <label>Email</label>
+            <input type="text" name="password" class="form-control" [(ngModel)]="form.email" required />
+            <p *ngIf="guardarError.email != null" style="color: red;">{{guardarError.email}}</p>
+        </div>
+        <button type="button" class="primary fullWidth" data-dismiss="modal" (click)="guardar()">Guardar
+            persona</button>
+    </div>
+</div>
+<div class="parent">
+    <div *ngFor="let persona of listaPersonas">
+        <div class="card child" *ngIf="listaPersonas.length > 0">
+            <div class="card-body">
+                <h5 class="card-title">{{persona.nombre}} {{persona.apellido}}</h5>
+                <p class="card-text">{{persona.edad}}</p>
+                <p class="card-text">{{persona.email}}</p>
+            </div>
+        </div>
+    </div>
+</div>
